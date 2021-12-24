@@ -1,8 +1,9 @@
 import React from 'react'
+// import COMPONENT from 'FILEPATH'
 
 const App = () => (
   <div>
-    Beep boop hi there, I&apos;m your personal assistant hehe
+    Beep boop. Hi there, I&apos;m your personal assistant :D
   </div>
 )
 
