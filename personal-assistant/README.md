@@ -50,9 +50,9 @@ Regardless of your background in React, we can break down this task. Let's outli
 
 ### Day 2 PM: Styling
 
-Now that we've learned how to use Styled Components, lets build some basic components that we'll use in our Personal Assistant. To help us in the development process, we're going to use Storybook, a development tool which can help us view components in isolation and in different states.
+Now that we've learned how to use Styled Components, lets build some basic components that we'll use in our Personal Assistant.
 
-I've included one example component under `/src/ExampleComponent`, which you can use as a template when creating new components. Once you've made these components, you can add new instances of them to Storybook in `/stories/index.js` and run `npm run storybook` to check them out in the browser!
+I've included one example component under `/src/ExampleComponent`, which you can use as a template when creating new components. You can add your components to App.js one at a time to check how they look!
 
 Start by building the components that you planned this morning. Try passing test data to your components and make sure they work correctly in all states (e.g. write a fake list of todos and pass it to your todo list component). Don't worry yet about the actual functionality of the components--we'll get to that tomorrow. For now, just make sure everything looks as you want it. If you finish building the components separately, try putting them together in a new component for the entire Todos page, then add this entire component in App.js.
 
