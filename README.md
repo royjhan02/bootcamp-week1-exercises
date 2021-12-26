@@ -12,13 +12,13 @@ To get started on the exercises, click the **Fork** button in the upper right co
 ### Outline
 Session | Topic | Exercises
 --- | --- | ---
-Day 0 AM | JS Fundamentals | JavaScript Basic Drills
-Day 0 PM | Advanced JS | Advanced JavaScript Drills
-Day 1 AM | Git & NPM | Git-it
-Day 1 PM | HTML/CSS | Personal Website
-Day 2 AM | React Intro | Personal Assistant (PA) App Planning
-Day 2 PM | Styled Components | PA Styling
-Day 3 AM | React State | PA Functionality
-Day 3 PM | React Lifecycle | PA Greeting Page
-Day 4 AM | React Routing | Finish PA App !!
-Day 4 PM | ??? | ???
+Day 1 AM | JS Fundamentals | JavaScript Basic Drills
+Day 1 PM | Advanced JS | Advanced JavaScript Drills
+Day 2 AM | Git & NPM | Git-it
+Day 2 PM | HTML/CSS | Personal Website
+Day 3 AM | React Intro | Personal Assistant (PA) App Planning
+Day 3 PM | Styled Components | PA Styling
+Day 4 AM | React State | PA Functionality
+Day 4 PM | React Lifecycle | PA Greeting Page
+Day 5 AM | React Routing | Finish PA App !!
+Day 5 PM | TBD | TBD
