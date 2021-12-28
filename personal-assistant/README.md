@@ -12,7 +12,7 @@ To run the App, first install the required dependencies with `npm i`. Then, just
 - [Day 4 AM](#day-4-am-putting-it-together)
 - [Deployment](#deployment)
 
-### Day 2 AM: App Planning
+### Day 3 AM: App Planning
 
 Before we start coding, we should plan out how we want our app to look. An example Personal Assistant is up [here!](https://pkpbynum.github.io/personal-assistant-example/) For now, however, think about implementing only the Todos page with the following functionality:
 
@@ -48,23 +48,23 @@ Regardless of your background in React, we can break down this task. Let's outli
 
 **Stretch Task:** Get started using real React components! Try rebuilding a page of your Personal website with React. You can just work directly off of the component in App.js. Run `npm run dev` to see the app in your browser.
 
-### Day 2 PM: Styling
+### Day 3 PM: Styling
 
 Now that we've learned how to use Styled Components, lets build some basic components that we'll use in our Personal Assistant.
 
 I've included one example component under `/src/ExampleComponent`, which you can use as a template when creating new components. You can add your components to App.js one at a time to check how they look!
 
-Start by building the components that you planned this morning. Try passing test data to your components and make sure they work correctly in all states (e.g. write a fake list of todos and pass it to your todo list component). Don't worry yet about the actual functionality of the components--we'll get to that tomorrow. For now, just make sure everything looks as you want it. If you finish building the components separately, try putting them together in a new component for the entire Todos page, then add this entire component in App.js.
+Start by building the components that you planned this morning. Try passing test data to your components and make sure they work correctly in all states (e.g. write a fake list of todos and pass it to your todo list component). Don't worry yet about the actual functionality of the components--we'll get to that tomorrow. For now, just make sure everything looks as you want it. If you finish building the components separately, try putting them together in a new component for the entire Todos page (which we'll call a 'container'), then add this container to App.js.
 
 **Stretch Task:** Make your components fully responsive using media queries! Also try adding hover states and transitions.
 
-### Day 3 AM: Adding Functionality
+### Day 4 AM: Adding Functionality
 
-With the help of state, we can finally store and manage our Todos dynamically. If you haven't yet, put together the components from yesterday into a new component for the whole todos page and add it to App.js. Now, use useReducer to implement the todos state and useState and track any inputs you've made.
+With the help of state, we can finally store and manage our Todos dynamically. If you haven't yet, put together the components from yesterday into a container for the whole todos page and add it to App.js. Now, use useReducer to implement the todos state and useState to track any inputs you've made.
 
 **Stretch Task:** Abstract your Todo state management with the Context API. React Context will allow you to access the same state across multiple pages--essentially anywhere in your App. This is quite difficult. Here's a [good article](https://www.taniarascia.com/using-context-api-in-react/) to get you started. Instead of passing that 'user' object, as is done in the example, pass the state and setState variables returned by useReducer.
 
-### Day 3 PM: Greeting Page
+### Day 4 PM: Greeting Page
 
 Our personal assistant is still pretty basic, and I don't want to be immediately confronted with all the stuff I have to do, set let's add a greeting! We'll create a new page with some nice text to say hello and give us the current weather with an API. Start by creating a new page component and outlining how it should work. Use this URL with a call to fetch to access the weather API: `https://api.openweathermap.org/data/2.5/weather?lat=<LATITUDE>&lon=<LONGITUDE>&appid=db5bbba816b58757082ce2230c7754a6&units=imperial`. Of course, you'll need to replace `<LATITUDE>` and `<LONGITUDE>` with the user's latitude and longitude. Check out the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API#Getting_the_current_position) for this.
 
@@ -72,7 +72,7 @@ Our personal assistant is still pretty basic, and I don't want to be immediately
 
 **Stretch Task 2:** Memoize your todo list items for better performance. You probably won't notice a difference for an app this small, but it's good practice!
 
-### Day 4 AM: Putting it all together
+### Day 5 AM: Putting it all together
 
 So we have all of the pieces of out Personal Assistant app, now let's put it together with some navigation! Add a BrowserRouter to your App.js and set up routes for the pages you've made so far. If you haven't already, build a Navbar and add `<Link>` components to actually navigate across your app.
 
