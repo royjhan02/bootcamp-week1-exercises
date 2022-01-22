@@ -1,0 +1,48 @@
+#navbar {
+    list-style-type: none;
+    font-size: 30px;
+    background-color: rgb(146, 39, 39);
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+li.navitem {
+    display: inline;
+}
+
+#homeimg {
+    padding: 50px;
+}
+
+body, html {
+    height: 100%;
+    margin-top: 30px;
+    background-image: url("thailand.jpg");
+    background-size: cover;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#homeimg {
+    height: 100%; 
+    width: 80%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 300px;
+  }
+
+.tableimg
+{
+    width: 360px; 
+    height: 300px;
+}
+
+table {
+    padding-left: 300px;
+}

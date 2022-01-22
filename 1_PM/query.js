@@ -101,19 +101,47 @@ dont hard code solutions. */
 
 // Implement the function usersByPet to return a list of user objects filtered by cat or dog.
 const usersByPet = pet => {
+    list = [];
+    for (let i = 0; i < database.users.length; i++) {
+        if (database.users[i].favPet === pet) {
+            list.push(database.users[i])
+        }
+    }
+    return list
 }
 console.log(usersByPet('dog'))
 console.log(usersByPet('cat'))
 
 // Implement the function collegeLookup to return the name and color of a user's college.
 const collegeLookup = user => {
+    let collegekey;
+    for (let i = 0; i < database.users.length; i++) {
+        if (database.users[i].firstName === user) {
+            collegekey = database.users[i].collegeId
+            break
+        }
+    }
+    let schoolinfo = []
+    for (let i = 0; i < database.college.length; i++) {
+        if (database.college[i].id === collegekey) {
+            schoolinfo = [database.college[i].name, database.college[i].color]
+        }
+    }
+    return schoolinfo
 }
 console.log(collegeLookup('Charles'))
 console.log(collegeLookup('Daniela'))
 
 // define oppositesAttract as a list of friend objects whose favorite pets are different.
-const oppositesAttract = _______
+const oppositesAttract = () => {
+    // let friendlist = []
+    // for (let i = 0; i < database.friends.length; i++) {
+    //     if (database.friends[i].id1)
+
+    // }
+}
 console.log(oppositesAttract)
+// [[0, 2], [2, 1], [3, 4], [2, 4], [0, 5]]
 
 // define local as a list of users who live in the same state as they go to school.
 const local = _______

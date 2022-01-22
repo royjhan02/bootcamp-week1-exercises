@@ -10,6 +10,15 @@ const assert = require('assert')
  */
 
 const hasFalsyValue = obj => {
+    for (let key in obj) {
+        if (typeof obj[key] === 'object') {
+            return hasFalsyValue(obj[key])
+        }
+        if (!obj[key]) {
+            return true
+        }
+    }
+    return false
 };
 
 const falsyObj = {
